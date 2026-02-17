@@ -1,0 +1,21 @@
+/* Color palette & typography variables */
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-elevated: #141414;
+  --color-surface: #1a1a1a;
+  --color-green: #4ade80;
+  --color-green-light: #86efac;
+  --color-green-dim: #22c55e;
+  --color-text: #ffffff;
+  --color-text-muted: #a3a3a3;
+  --color-border: rgba(74, 222, 128, 0.2);
+  --font-sans: 'Roboto', system-ui, sans-serif;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --radius: 8px;
+  --transition: 0.2s ease;
+}
