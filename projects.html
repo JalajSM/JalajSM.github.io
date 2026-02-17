@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>Projects &mdash; Jalaj Mehta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -22,27 +22,236 @@
   <main class="main">
     <section class="page-header">
       <h1 class="page-header__title">Projects</h1>
-      <p class="page-header__subtitle">Selected work and side projects.</p>
+      <p class="page-header__subtitle">A selection of research, engineering, and software projects.</p>
     </section>
 
-    <section class="section projects-grid">
-      <article class="project-card">
-        <h3 class="project-card__title">Project one</h3>
-        <p class="project-card__desc">Short description. Add link, tech stack, and image as needed.</p>
-      </article>
-      <article class="project-card">
-        <h3 class="project-card__title">Project two</h3>
-        <p class="project-card__desc">Short description. Add link, tech stack, and image as needed.</p>
-      </article>
-      <article class="project-card">
-        <h3 class="project-card__title">Project three</h3>
-        <p class="project-card__desc">Short description. Add link, tech stack, and image as needed.</p>
-      </article>
+    <!-- PROJECT 1: Senior Design / Yang Lab -->
+    <section class="section project-detail">
+      <h2>Senior Design Project &mdash; Electrolyte Phase Diagrams</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Python</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">DSC</span>
+        <span class="tag">qNMR</span>
+        <span class="tag">Materials Science</span>
+      </div>
+      <div class="project-detail__gallery">
+        <img src="images/binary_phase_diagram.png" alt="Binary phase diagram of LiPF6 in EC/DMC" class="project-detail__img">
+        <img src="images/ternary_phase_diagram.png" alt="Ternary phase diagram of LiPF6, EC, DMC" class="project-detail__img">
+        <img src="images/yang_knn_interpolated.png" alt="KNN interpolated binary phase diagram" class="project-detail__img">
+        <img src="images/yang_ml_physics.png" alt="ML + physics-informed phase diagram prediction" class="project-detail__img">
+        <img src="images/yang_ternary_3d.png" alt="3D ternary phase diagram with temperature" class="project-detail__img">
+        <img src="images/yang_solidus_knn.png" alt="Solidus line KNN prediction plot" class="project-detail__img">
+        <img src="images/yang_bpd_dec.png" alt="Binary phase diagram for DEC system" class="project-detail__img">
+      </div>
+      <p>
+        As part of my senior capstone at Columbia, I worked on developing phase diagrams for organic liquid electrolyte systems
+        (LiPF6 in EC/DMC and EC/DEC solvents) used in next-generation batteries. The goal was to create lighter, more energy-dense
+        electrochemical cells using SPAN anodes.
+      </p>
+      <p>
+        I built a comprehensive Python data pipeline that processes raw DSC (Differential Scanning Calorimetry) heat ramp data,
+        automatically detects phase transition peaks using adaptive search algorithms, and maps them to composition data. The pipeline
+        generates binary and ternary phase diagrams, and uses KNN imputation and Random Forest regression models to interpolate
+        missing data points and predict solidus/liquidus lines across the full composition range.
+      </p>
+      <p>
+        Key technical contributions include an adaptive peak-finding algorithm that ranks candidates by weighted slope and magnitude scores,
+        automated processing of dozens of XLS data files with different compositions, and publication-quality visualization of phase boundaries.
+      </p>
+      <h3 class="project-detail__subheading">Senior Design Poster</h3>
+      <div class="project-detail__embed-wrapper">
+        <iframe src="images/energy_presentation.pdf" class="project-detail__embed" title="Senior Design Poster Presentation"></iframe>
+      </div>
+      <div class="cta-row">
+        <a href="images/sdp_poster.pptx" class="btn btn--outline" download>Download Poster (PPTX) &darr;</a>
+      </div>
+    </section>
+
+    <!-- PROJECT 2: Gang Lab -->
+    <section class="section project-detail">
+      <h2>DNA Crystal Metalization &mdash; Gang Lab / Brookhaven National Lab</h2>
+      <div class="project-detail__meta">
+        <span class="tag">SEM</span>
+        <span class="tag">TEM</span>
+        <span class="tag">FIB</span>
+        <span class="tag">XRD</span>
+        <span class="tag">EDX</span>
+        <span class="tag">Nanoindentation</span>
+      </div>
+      <div class="project-detail__gallery">
+        <img src="images/gang_lab_lattice.jpg" alt="Washed DNA crystal lattice (SEM)" class="project-detail__img">
+        <img src="images/gang_lab_unwashed.jpg" alt="Unwashed DNA crystal lattice (SEM)" class="project-detail__img">
+        <img src="images/gang_lab_fecl3_dried.jpg" alt="FeCl3-infiltrated lattice, dried (microscopy)" class="project-detail__img">
+        <img src="images/gang_lab_fecl_color.jpg" alt="FeCl-infiltrated lattice, color microscopy" class="project-detail__img">
+        <img src="images/gang_lab_fecl2_wet.jpg" alt="FeCl2-infiltrated lattice, wet (microscopy)" class="project-detail__img">
+        <img src="images/gang_lab_sample_q.jpg" alt="Sample Q dried (microscopy)" class="project-detail__img">
+        <img src="images/gang_lab_sample_v_wet.jpg" alt="Sample V wet (microscopy)" class="project-detail__img">
+      </div>
+      <p class="project-detail__caption">
+        Microscopy images from the DNA crystal metalization experiments. Images show lattices before and after iron oxide
+        infiltration at various incubation times and conditions (FeCl<sub>2</sub>, FeCl<sub>3</sub>, wet vs. dried samples).
+      </p>
+      <p>
+        Over two years in the Gang Lab at Columbia and as a visiting researcher at Brookhaven National Lab,
+        I established a novel procedure to metalize DNA crystal lattices via infiltration with iron oxide.
+        This research explored the use of DNA as a programmable scaffold for creating 3D nanostructured materials.
+      </p>
+      <p>
+        I synthesized DNA crystals and characterized them extensively using scanning electron microscopy (SEM),
+        transmission electron microscopy (TEM), focused ion beam (FIB) milling, optical microscopy, X-ray diffraction (XRD),
+        and energy-dispersive X-ray spectroscopy (EDX). I also developed nanoindentation testing protocols to evaluate
+        the mechanical properties of these crystals, and created methods to derive elastic modulus and hardness from raw
+        indentation data.
+      </p>
+    </section>
+
+    <!-- PROJECT 3: MLEM Fellowship -->
+    <section class="section project-detail">
+      <h2>Crystal Grain Analysis Program &mdash; Mickey Leland Energy Fellowship</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Python</span>
+        <span class="tag">Image Processing</span>
+        <span class="tag">Tkinter</span>
+        <span class="tag">Linear Algebra</span>
+        <span class="tag">DOE</span>
+      </div>
+      <div class="project-detail__gallery">
+        <img src="images/crystal_twin.gif" alt="Animation of crystal twin analysis from TEM images" class="project-detail__img">
+      </div>
+      <p>
+        During my fellowship at the National Energy Technology Laboratory (part of the U.S. Department of Energy),
+        I developed a Python program for automated image processing of transmission electron microscopy (TEM) images
+        of metal alloy microstructures.
+      </p>
+      <p>
+        The program implements 3D matrix mathematics to calculate crystal grain misorientation angles and axes from
+        diffraction pattern data. I packaged the tool into a standalone executable with a Tkinter-based graphical
+        user interface so that researchers without programming experience could use it. The work was presented at a
+        Department of Energy Symposium in Washington, D.C.
+      </p>
+    </section>
+
+    <!-- PROJECT 4: Energy Conservation / Solar Car -->
+    <section class="section project-detail">
+      <h2>Solar-Powered Vehicle Design &mdash; Energy &amp; Energy Conservation</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Next.js</span>
+        <span class="tag">CAD / Onshape</span>
+        <span class="tag">Energy Systems</span>
+        <span class="tag">Lifecycle Analysis</span>
+      </div>
+      <h3 class="project-detail__subheading">Final Presentation</h3>
+      <div class="project-detail__embed-wrapper">
+        <iframe src="images/energy_presentation.pdf" class="project-detail__embed" title="Energy Conservation Final Presentation"></iframe>
+      </div>
+      <p>
+        A comprehensive group project exploring the viability of a solar-powered vehicle. I contributed to the CAD modeling
+        of a small-scale solar car prototype and conducted detailed analyses of solar panel energy density, battery capacity
+        and cost, motor selection, and infrastructure requirements.
+      </p>
+      <p>
+        The project included a full lifecycle emissions comparison between a solar EV (modeled after the Lightyear 0)
+        and a conventional Honda Civic, covering manufacturing, operational, and end-of-life emissions. We also built
+        a companion Next.js web application to present our findings interactively, and reviewed the competitive landscape
+        of solar vehicles (Aptera, Lightyear) to identify key engineering trade-offs.
+      </p>
+      <div class="cta-row">
+        <a href="images/energy_presentation.pdf" class="btn btn--outline" target="_blank" rel="noopener">View Full Presentation (PDF) &rarr;</a>
+      </div>
+    </section>
+
+    <!-- PROJECT 5: PhotoLearn -->
+    <section class="section project-detail">
+      <h2>PhotoLearn &mdash; Interactive Photography Tutor</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Next.js</span>
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Flask</span>
+        <span class="tag">UI/UX Design</span>
+      </div>
+      <p>
+        PhotoLearn is an interactive web application that teaches photography fundamentals through hands-on simulators,
+        quizzes, and a creative playground. Built as part of Columbia's User Interface Design course (COMS W 4170),
+        the app features real-time camera setting simulators for ISO, aperture, and shutter speed.
+      </p>
+      <p>
+        Key features include a step-by-step learning flow with interactive simulators and progress tracking,
+        a quiz system with simulator-based and scenario-based questions, and a playground mode where users can
+        upload their own images and experiment with camera settings in real time. The frontend is built with
+        Next.js/React/TypeScript, and a Flask backend provides API extensibility.
+      </p>
+      <p><em>Team: Jalaj Mehta, Shivan Mukherjee, Allyce Chung, Janie</em></p>
+    </section>
+
+    <!-- PROJECT 6: UI Design Assignments -->
+    <section class="section project-detail">
+      <h2>UI Design Coursework</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Flask</span>
+        <span class="tag">Python</span>
+        <span class="tag">HTML / CSS / JS</span>
+        <span class="tag">UI/UX</span>
+      </div>
+      <p>
+        A series of assignments from Columbia's User Interface Design course exploring web application architecture
+        and frontend design. Projects include Flask-based server applications with templated frontends, and
+        a vanilla HTML/JavaScript sales logging application. Each project focused on different aspects of
+        UI engineering: server-side rendering, form handling, data validation, and responsive layout.
+      </p>
+    </section>
+
+    <!-- PROJECT 7: Writing Sample -->
+    <section class="section project-detail">
+      <h2>Technical Writing &mdash; The Heat Problem in Semiconductors</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Technical Writing</span>
+        <span class="tag">Semiconductors</span>
+        <span class="tag">Materials Science</span>
+      </div>
+      <p>
+        A technical writing sample exploring the increasing thermal management challenges in the semiconductor industry.
+        The piece covers the physics of heat generation in modern chips (dynamic power dissipation, leakage currents,
+        and electromigration), and examines two frontier solutions: topological semimetals (TSMs) as alternatives
+        to copper interconnects, and biomimetic microfluidic cooling systems.
+      </p>
+      <p>
+        The article discusses how TSMs resist surface scattering at the nanoscale due to their unique Fermi arc
+        surface states, and how microfluidic channels etched directly into silicon chips can reduce peak temperatures
+        by up to 65%. Both approaches represent cutting-edge materials science applied to one of computing's
+        most pressing bottlenecks.
+      </p>
+      <div class="cta-row">
+        <a href="Sample Work/Writing_Sample_Jalaj_Patent.pdf" class="btn btn--outline" target="_blank" rel="noopener">Read Full Writing Sample (PDF) &rarr;</a>
+      </div>
+    </section>
+
+    <!-- PROJECT 8: Garcia Research -->
+    <section class="section project-detail">
+      <h2>Flame-Retardant Hydrogel Research &mdash; Garcia Program</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Polymer Engineering</span>
+        <span class="tag">ACS Publication</span>
+        <span class="tag">Materials Research Society</span>
+      </div>
+      <p>
+        During the Garcia Research Program at SUNY Stony Brook, I developed biodegradable hydrogel flame retardants
+        from physically cross-linked PVA bases with embedded starch and RDP particles. The work resulted in a
+        peer-reviewed publication in the American Chemical Society's <em>Biomacromolecules</em> journal (2021):
+        "Synthesis of an Effective Flame-Retardant Hydrogel for Skin Protection Using Xanthan Gum and Resorcinol
+        Bis(diphenyl phosphate)-Coated Starch."
+      </p>
+      <p>
+        I also analyzed UIO-66 metal-organic frameworks through the Lattice Boltzmann model to develop plausible
+        reaction mechanisms for carbon capture and predict trends in diffusion coefficient changes.
+        This work was presented at the Fall 2019 Materials Research Society Conference in Boston.
+      </p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span>. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Jalaj Mehta. All rights reserved.</p>
   </footer>
   <script src="js/script.js"></script>
 </body>
