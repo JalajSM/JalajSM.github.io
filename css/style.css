@@ -24,13 +24,13 @@ body {
 }
 
 a {
-  color: var(--color-green);
+  color: var(--color-blue);
   text-decoration: none;
   transition: color var(--transition);
 }
 
 a:hover {
-  color: var(--color-green-light);
+  color: var(--color-blue-dark);
 }
 
 img {
@@ -50,12 +50,13 @@ ul li {
 
 /* Header & nav */
 .site-header {
-  background-color: var(--color-bg-elevated);
-  border-bottom: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  border-bottom: 2px solid var(--color-blue);
   padding: var(--space-md) var(--space-xl);
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 8px rgba(74, 134, 200, 0.1);
 }
 
 .nav {
@@ -64,6 +65,7 @@ ul li {
   flex-wrap: wrap;
   max-width: 960px;
   margin: 0 auto;
+  align-items: center;
 }
 
 .nav-link {
@@ -74,13 +76,13 @@ ul li {
 }
 
 .nav-link:hover {
-  color: var(--color-green-light);
-  background-color: rgba(74, 222, 128, 0.08);
+  color: var(--color-blue);
+  background-color: rgba(74, 134, 200, 0.08);
 }
 
 .nav-link--active {
-  color: var(--color-green);
-  border-bottom: 2px solid var(--color-green);
+  color: var(--color-blue);
+  border-bottom: 2px solid var(--color-blue);
 }
 
 /* Main content */
@@ -107,8 +109,8 @@ ul li {
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--color-green);
-  box-shadow: 0 4px 24px rgba(74, 222, 128, 0.2);
+  border: 3px solid var(--color-blue);
+  box-shadow: 0 4px 24px rgba(74, 134, 200, 0.25);
 }
 
 .hero__title {
@@ -121,7 +123,7 @@ ul li {
 
 .hero__subtitle {
   font-size: 1.125rem;
-  color: var(--color-green);
+  color: var(--color-blue);
   margin: 0 0 var(--space-md);
   font-weight: 500;
 }
@@ -143,7 +145,7 @@ ul li {
 }
 
 .highlight-card {
-  background-color: var(--color-surface);
+  background-color: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-lg);
@@ -152,8 +154,8 @@ ul li {
 }
 
 .highlight-card:hover {
-  border-color: var(--color-green-dim);
-  box-shadow: 0 4px 20px rgba(74, 222, 128, 0.12);
+  border-color: var(--color-blue);
+  box-shadow: 0 4px 20px rgba(74, 134, 200, 0.15);
   transform: translateY(-2px);
 }
 
@@ -166,7 +168,7 @@ ul li {
 .highlight-card h3 {
   font-size: 1rem;
   font-weight: 600;
-  color: var(--color-green);
+  color: var(--color-blue);
   margin: 0 0 var(--space-sm);
 }
 
@@ -192,33 +194,45 @@ ul li {
   font-weight: 500;
   font-size: 0.9375rem;
   transition: all var(--transition);
-  background-color: var(--color-green);
-  color: var(--color-bg);
-  border: 2px solid var(--color-green);
+  background-color: var(--color-blue);
+  color: #ffffff;
+  border: 2px solid var(--color-blue);
 }
 
 .btn:hover {
-  background-color: var(--color-green-light);
-  border-color: var(--color-green-light);
-  color: var(--color-bg);
+  background-color: var(--color-blue-dark);
+  border-color: var(--color-blue-dark);
+  color: #ffffff;
   transform: translateY(-1px);
 }
 
 .btn--outline {
   background-color: transparent;
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 
 .btn--outline:hover {
-  background-color: var(--color-green);
-  color: var(--color-bg);
+  background-color: var(--color-blue);
+  color: #ffffff;
+}
+
+.btn--red {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  color: #ffffff;
+}
+
+.btn--red:hover {
+  background-color: var(--color-red-light);
+  border-color: var(--color-red-light);
+  color: #ffffff;
 }
 
 /* Page header (about, projects) */
 .page-header {
   margin-bottom: var(--space-2xl);
   padding-bottom: var(--space-lg);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-blue);
 }
 
 .page-header__row {
@@ -233,7 +247,7 @@ ul li {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--color-green);
+  border: 2px solid var(--color-blue);
   flex-shrink: 0;
 }
 
@@ -241,6 +255,7 @@ ul li {
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   font-weight: 700;
   margin: 0 0 var(--space-sm);
+  color: var(--color-text);
 }
 
 .page-header__subtitle {
@@ -255,9 +270,11 @@ ul li {
 
 .section h2 {
   font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--color-green);
+  font-weight: 700;
+  color: var(--color-red);
   margin: 0 0 var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .section p {
@@ -302,7 +319,7 @@ ul li {
   height: 16px;
   border-radius: 50%;
   background-color: var(--color-bg);
-  border: 3px solid var(--color-green);
+  border: 3px solid var(--color-blue);
   z-index: 1;
 }
 
@@ -315,7 +332,7 @@ ul li {
 
 .timeline__meta {
   font-size: 0.9rem;
-  color: var(--color-green);
+  color: var(--color-blue);
   margin: 0 0 var(--space-xs);
   font-weight: 500;
 }
@@ -337,16 +354,26 @@ ul li {
 }
 
 /* Skills grid */
+.skills-section-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-blue);
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 .skill-tag {
   display: inline-block;
   padding: var(--space-xs) var(--space-md);
-  background-color: var(--color-surface);
+  background-color: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
   border-radius: 20px;
   font-size: 0.875rem;
@@ -355,8 +382,19 @@ ul li {
 }
 
 .skill-tag:hover {
-  border-color: var(--color-green);
-  color: var(--color-green);
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+  background-color: rgba(74, 134, 200, 0.06);
+}
+
+.skill-tag--red {
+  border-color: rgba(153, 0, 0, 0.25);
+}
+
+.skill-tag--red:hover {
+  border-color: var(--color-red);
+  color: var(--color-red);
+  background-color: rgba(153, 0, 0, 0.05);
 }
 
 /* Project cards (grid view) */
@@ -367,7 +405,7 @@ ul li {
 }
 
 .project-card {
-  background-color: var(--color-surface);
+  background-color: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: var(--space-lg);
@@ -376,8 +414,8 @@ ul li {
 }
 
 .project-card:hover {
-  border-color: var(--color-green-dim);
-  box-shadow: 0 4px 20px rgba(74, 222, 128, 0.12);
+  border-color: var(--color-blue);
+  box-shadow: 0 4px 20px rgba(74, 134, 200, 0.15);
   transform: translateY(-2px);
 }
 
@@ -385,7 +423,7 @@ ul li {
   font-size: 1.125rem;
   font-weight: 600;
   margin: 0 0 var(--space-sm);
-  color: var(--color-green);
+  color: var(--color-blue);
 }
 
 .project-card__desc {
@@ -397,19 +435,30 @@ ul li {
 /* Project detail (full-width sections on projects page) */
 .project-detail {
   padding: var(--space-xl);
-  background-color: var(--color-surface);
+  background-color: var(--color-bg-elevated);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .project-detail:hover {
-  border-color: var(--color-green-dim);
+  border-color: var(--color-blue);
+  box-shadow: 0 4px 16px rgba(74, 134, 200, 0.1);
 }
 
 .project-detail h2 {
   font-size: 1.3rem;
   margin-bottom: var(--space-sm);
+  color: var(--color-text);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.project-detail__subheading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-blue);
+  margin: var(--space-lg) 0 var(--space-sm);
 }
 
 .project-detail__meta {
@@ -422,19 +471,18 @@ ul li {
 .tag {
   display: inline-block;
   padding: 2px 10px;
-  background-color: rgba(74, 222, 128, 0.1);
-  border: 1px solid var(--color-border);
+  background-color: rgba(74, 134, 200, 0.1);
+  border: 1px solid rgba(74, 134, 200, 0.3);
   border-radius: 14px;
   font-size: 0.8rem;
-  color: var(--color-green);
+  color: var(--color-blue-dark);
   font-weight: 500;
 }
 
-.project-detail__subheading {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--color-text);
-  margin: var(--space-lg) 0 var(--space-sm);
+.tag--red {
+  background-color: rgba(153, 0, 0, 0.08);
+  border-color: rgba(153, 0, 0, 0.25);
+  color: var(--color-red);
 }
 
 .project-detail__gallery {
@@ -462,7 +510,7 @@ ul li {
 }
 
 .project-detail__gallery::-webkit-scrollbar-thumb:hover {
-  background: var(--color-green-dim);
+  background: var(--color-blue-light);
 }
 
 .project-detail__img {
@@ -471,7 +519,7 @@ ul li {
   width: auto;
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
-  background-color: var(--color-bg-elevated);
+  background-color: var(--color-surface);
   object-fit: contain;
   scroll-snap-align: start;
   flex-shrink: 0;
@@ -480,19 +528,8 @@ ul li {
 }
 
 .project-detail__img:hover {
-  border-color: var(--color-green-dim);
+  border-color: var(--color-blue);
   transform: scale(1.02);
-}
-
-.project-detail__poster {
-  margin-bottom: var(--space-lg);
-}
-
-.project-detail__poster-img {
-  width: 100%;
-  border-radius: var(--radius);
-  border: 1px solid var(--color-border);
-  background-color: var(--color-bg-elevated);
 }
 
 .project-detail__caption {
@@ -503,12 +540,23 @@ ul li {
   margin-bottom: var(--space-lg);
 }
 
+.project-detail__poster {
+  margin-bottom: var(--space-lg);
+}
+
+.project-detail__poster-img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-surface);
+}
+
 .project-detail__embed-wrapper {
   margin-bottom: var(--space-lg);
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   overflow: hidden;
-  background-color: var(--color-bg-elevated);
+  background-color: var(--color-surface);
 }
 
 .project-detail__embed {
@@ -530,8 +578,8 @@ ul li {
 
 /* Footer */
 .site-footer {
-  background-color: var(--color-bg-elevated);
-  border-top: 1px solid var(--color-border);
+  background-color: var(--color-blue);
+  border-top: none;
   padding: var(--space-lg) var(--space-xl);
   text-align: center;
 }
@@ -539,11 +587,11 @@ ul li {
 .site-footer p {
   margin: 0;
   font-size: 0.875rem;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .site-footer a {
-  color: var(--color-green);
+  color: #ffffff;
 }
 
 /* Responsive adjustments */

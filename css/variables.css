@@ -1,14 +1,23 @@
 /* Color palette & typography variables */
 :root {
-  --color-bg: #0a0a0a;
-  --color-bg-elevated: #141414;
-  --color-surface: #1a1a1a;
-  --color-green: #4ade80;
-  --color-green-light: #86efac;
-  --color-green-dim: #22c55e;
-  --color-text: #ffffff;
-  --color-text-muted: #a3a3a3;
-  --color-border: rgba(74, 222, 128, 0.2);
+  /* White base with Columbia blue (Pantone 292) + Penn red (Pantone 200) */
+  --color-bg: #ffffff;
+  --color-bg-elevated: #f4f7fc;
+  --color-surface: #e8eef6;
+
+  /* Columbia blue (Pantone 292) */
+  --color-blue: #4A86C8;
+  --color-blue-light: #75AADB;
+  --color-blue-dark: #2D6EA8;
+
+  /* Penn red (Pantone 200) */
+  --color-red: #990000;
+  --color-red-light: #B31B1B;
+
+  --color-text: #1a1a1a;
+  --color-text-muted: #555555;
+  --color-border: rgba(74, 134, 200, 0.22);
+
   --font-sans: 'Roboto', system-ui, sans-serif;
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
