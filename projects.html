@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects &mdash; Jalaj Mehta</title>
+  <title>Projects: Jalaj Mehta</title>
+  <meta name="description" content="Selected research, engineering, and software projects by Jalaj Mehta, from DNA crystal metalization and electrolyte phase diagrams to product and technical writing.">
+  <meta name="theme-color" content="#2f6db0">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects: Jalaj Mehta">
+  <meta property="og:description" content="A selection of research, engineering, and software projects.">
+  <meta property="og:image" content="images/crystal_twin.gif">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+  <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__brand"><span>Jalaj Mehta</span></a>
       <a href="index.html" class="nav-link">Home</a>
       <a href="about.html" class="nav-link">Profile</a>
       <a href="projects.html" class="nav-link nav-link--active">Projects</a>
@@ -20,14 +28,15 @@
   </header>
 
   <main class="main">
-    <section class="page-header">
+    <section class="page-header reveal">
+      <span class="page-header__eyebrow">Portfolio</span>
       <h1 class="page-header__title">Projects</h1>
       <p class="page-header__subtitle">A selection of research, engineering, and software projects.</p>
     </section>
 
     <!-- PROJECT 1: Senior Design / Yang Lab -->
-    <section class="section project-detail">
-      <h2>Senior Design Project &mdash; Electrolyte Phase Diagrams</h2>
+    <section class="section project-detail reveal">
+      <h2>Senior Design Project: Electrolyte Phase Diagrams</h2>
       <div class="project-detail__meta">
         <span class="tag">Python</span>
         <span class="tag">Machine Learning</span>
@@ -36,19 +45,19 @@
         <span class="tag">Materials Science</span>
       </div>
       <p>
-        As part of my senior capstone at Columbia, I worked on developing phase diagrams for organic liquid electrolyte systems
-        (LiPF6 in EC/DMC and EC/DEC solvents) used in next-generation batteries. The goal was to create lighter, more energy-dense
-        electrochemical cells using SPAN anodes.
+        For my senior capstone at Columbia, I developed phase diagrams for organic liquid electrolyte systems
+        (LiPF6 in EC/DMC and EC/DEC solvents) used in next-generation batteries. The aim was a lighter, more energy-dense
+        electrochemical cell built around SPAN anodes.
       </p>
       <p>
-        I built a comprehensive Python data pipeline that processes raw DSC (Differential Scanning Calorimetry) heat ramp data,
-        automatically detects phase transition peaks using adaptive search algorithms, and maps them to composition data. The pipeline
-        generates binary and ternary phase diagrams, and uses KNN imputation and Random Forest regression models to interpolate
-        missing data points and predict solidus/liquidus lines across the full composition range.
+        I wrote a Python pipeline that reads raw DSC (Differential Scanning Calorimetry) heat ramp data, finds phase transition
+        peaks with an adaptive search, and maps them to composition. From there it generates binary and ternary phase diagrams and
+        uses KNN imputation and Random Forest regression to fill in missing points and predict solidus and liquidus lines across the
+        full composition range.
       </p>
       <p>
-        Key technical contributions include an adaptive peak-finding algorithm that ranks candidates by weighted slope and magnitude scores,
-        automated processing of dozens of XLS data files with different compositions, and publication-quality visualization of phase boundaries.
+        The parts I'm most proud of: a peak-finding algorithm that ranks candidates by weighted slope and magnitude, automated
+        handling of dozens of XLS files at different compositions, and clean, publication-ready plots of the phase boundaries.
       </p>
       <h3 class="project-detail__subheading">Senior Design Poster</h3>
       <div class="project-detail__poster">
@@ -67,8 +76,8 @@
     </section>
 
     <!-- PROJECT 2: Gang Lab -->
-    <section class="section project-detail">
-      <h2>DNA Crystal Metalization &mdash; Gang Lab / Brookhaven National Lab</h2>
+    <section class="section project-detail reveal">
+      <h2>DNA Crystal Metalization: Gang Lab / Brookhaven National Lab</h2>
       <div class="project-detail__meta">
         <span class="tag">SEM</span>
         <span class="tag">TEM</span>
@@ -87,26 +96,25 @@
         <img src="images/gang_lab_sample_v_wet.jpg" alt="Sample V wet (microscopy)" class="project-detail__img" loading="lazy">
       </div>
       <p class="project-detail__caption">
-        Microscopy images from the DNA crystal metalization experiments. Images show lattices before and after iron oxide
-        infiltration at various incubation times and conditions (FeCl<sub>2</sub>, FeCl<sub>3</sub>, wet vs. dried samples).
+        Microscopy from the DNA crystal metalization experiments. The lattices are shown before and after iron oxide
+        infiltration at different incubation times and conditions (FeCl<sub>2</sub>, FeCl<sub>3</sub>, wet vs. dried samples).
       </p>
       <p>
         Over two years in the Gang Lab at Columbia and as a visiting researcher at Brookhaven National Lab,
-        I established a novel procedure to metalize DNA crystal lattices via infiltration with iron oxide.
-        This research explored the use of DNA as a programmable scaffold for creating 3D nanostructured materials.
+        I worked out a new procedure to metalize DNA crystal lattices by infiltrating them with iron oxide.
+        The idea was to use DNA as a programmable scaffold for building 3D nanostructured materials.
       </p>
       <p>
-        I synthesized DNA crystals and characterized them extensively using scanning electron microscopy (SEM),
+        I synthesized the crystals and characterized them with scanning electron microscopy (SEM),
         transmission electron microscopy (TEM), focused ion beam (FIB) milling, optical microscopy, X-ray diffraction (XRD),
-        and energy-dispersive X-ray spectroscopy (EDX). I also developed nanoindentation testing protocols to evaluate
-        the mechanical properties of these crystals, and created methods to derive elastic modulus and hardness from raw
-        indentation data.
+        and energy-dispersive X-ray spectroscopy (EDX). I also worked out nanoindentation protocols to measure their mechanical
+        properties, along with methods to pull elastic modulus and hardness out of the raw indentation data.
       </p>
     </section>
 
     <!-- PROJECT 3: MLEM Fellowship -->
-    <section class="section project-detail">
-      <h2>Crystal Grain Analysis Program &mdash; Mickey Leland Energy Fellowship</h2>
+    <section class="section project-detail reveal">
+      <h2>Crystal Grain Analysis Program: Mickey Leland Energy Fellowship</h2>
       <div class="project-detail__meta">
         <span class="tag">Python</span>
         <span class="tag">Image Processing</span>
@@ -119,20 +127,19 @@
       </div>
       <p>
         During my fellowship at the National Energy Technology Laboratory (part of the U.S. Department of Energy),
-        I developed a Python program for automated image processing of transmission electron microscopy (TEM) images
-        of metal alloy microstructures.
+        I wrote a Python program to automatically process transmission electron microscopy (TEM) images of metal alloy
+        microstructures.
       </p>
       <p>
-        The program implements 3D matrix mathematics to calculate crystal grain misorientation angles and axes from
-        diffraction pattern data. I packaged the tool into a standalone executable with a Tkinter-based graphical
-        user interface so that researchers without programming experience could use it. The work was presented at a
-        Department of Energy Symposium in Washington, D.C.
+        It uses 3D matrix math to calculate crystal grain misorientation angles and axes from diffraction pattern data.
+        I packaged it as a standalone executable with a Tkinter interface so researchers who don't code could still run it.
+        I presented the work at a Department of Energy Symposium in Washington, D.C.
       </p>
     </section>
 
     <!-- PROJECT 5: PhotoLearn -->
-    <section class="section project-detail">
-      <h2>PhotoLearn &mdash; Interactive Photography Tutor</h2>
+    <section class="section project-detail reveal">
+      <h2>PhotoLearn: Interactive Photography Tutor</h2>
       <div class="project-detail__meta">
         <span class="tag">Next.js</span>
         <span class="tag">React</span>
@@ -141,38 +148,35 @@
         <span class="tag">UI/UX Design</span>
       </div>
       <p>
-        PhotoLearn is an interactive web application that teaches photography fundamentals through hands-on simulators,
-        quizzes, and a creative playground. Built as part of Columbia's User Interface Design course (COMS W 4170),
-        the app features real-time camera setting simulators for ISO, aperture, and shutter speed.
+        PhotoLearn is a web app that teaches the fundamentals of photography through hands-on simulators, quizzes, and a
+        creative playground. We built it for Columbia's User Interface Design course (COMS W 4170), with real-time simulators
+        for ISO, aperture, and shutter speed.
       </p>
       <p>
-        Key features include a step-by-step learning flow with interactive simulators and progress tracking,
-        a quiz system with simulator-based and scenario-based questions, and a playground mode where users can
-        upload their own images and experiment with camera settings in real time. The frontend is built with
-        Next.js/React/TypeScript, and a Flask backend provides API extensibility.
+        It walks you through a step-by-step learning flow with interactive simulators and progress tracking, quizzes that mix
+        simulator and scenario questions, and a playground where you upload your own photos and change camera settings on the
+        fly. The frontend is Next.js/React/TypeScript, with a Flask backend that leaves room to grow the API.
       </p>
       <p><em>Team: Jalaj Mehta, Shivan Mukherjee, Allyce Chung, Janie</em></p>
     </section>
 
     <!-- PROJECT 7: Writing Sample -->
-    <section class="section project-detail">
-      <h2>Technical Writing &mdash; The Heat Problem in Semiconductors</h2>
+    <section class="section project-detail reveal">
+      <h2>Technical Writing: The Heat Problem in Semiconductors</h2>
       <div class="project-detail__meta">
         <span class="tag">Technical Writing</span>
         <span class="tag">Semiconductors</span>
         <span class="tag">Materials Science</span>
       </div>
       <p>
-        A technical writing sample exploring the increasing thermal management challenges in the semiconductor industry.
-        The piece covers the physics of heat generation in modern chips (dynamic power dissipation, leakage currents,
-        and electromigration), and examines two frontier solutions: topological semimetals (TSMs) as alternatives
-        to copper interconnects, and biomimetic microfluidic cooling systems.
+        A writing sample on the growing thermal management problem in the semiconductor industry. It walks through the physics
+        of heat generation in modern chips (dynamic power dissipation, leakage currents, and electromigration), then looks at
+        two frontier fixes: topological semimetals (TSMs) in place of copper interconnects, and biomimetic microfluidic cooling.
       </p>
       <p>
-        The article discusses how TSMs resist surface scattering at the nanoscale due to their unique Fermi arc
-        surface states, and how microfluidic channels etched directly into silicon chips can reduce peak temperatures
-        by up to 65%. Both approaches represent cutting-edge materials science applied to one of computing's
-        most pressing bottlenecks.
+        I explain why TSMs resist surface scattering at the nanoscale thanks to their Fermi arc surface states, and how
+        microfluidic channels etched straight into silicon can cut peak temperatures by up to 65%. Both are cases of materials
+        science aimed squarely at one of computing's hardest bottlenecks.
       </p>
       <div class="cta-row">
         <a href="images/Writing_Sample.pdf" class="btn btn--outline" target="_blank" rel="noopener">Read Full Writing Sample (PDF) &rarr;</a>
@@ -180,30 +184,30 @@
     </section>
 
     <!-- PROJECT 8: Garcia Research -->
-    <section class="section project-detail">
-      <h2>Flame-Retardant Hydrogel Research &mdash; Garcia Program</h2>
+    <section class="section project-detail reveal">
+      <h2>Flame-Retardant Hydrogel Research: Garcia Program</h2>
       <div class="project-detail__meta">
         <span class="tag">Polymer Engineering</span>
         <span class="tag">ACS Publication</span>
         <span class="tag">Materials Research Society</span>
       </div>
       <p>
-        During the Garcia Research Program at SUNY Stony Brook, I developed biodegradable hydrogel flame retardants
-        from physically cross-linked PVA bases with embedded starch and RDP particles. The work resulted in a
-        peer-reviewed publication in the American Chemical Society's <em>Biomacromolecules</em> journal (2021):
+        In the Garcia Research Program at SUNY Stony Brook, I made biodegradable hydrogel flame retardants from physically
+        cross-linked PVA bases with starch and RDP particles embedded in them. The work led to a peer-reviewed paper in the
+        American Chemical Society's <em>Biomacromolecules</em> journal (2021):
         &ldquo;Synthesis of an Effective Flame-Retardant Hydrogel for Skin Protection Using Xanthan Gum and Resorcinol
         Bis(diphenyl phosphate)-Coated Starch.&rdquo;
       </p>
       <p>
-        I also analyzed UIO-66 metal-organic frameworks through the Lattice Boltzmann model to develop plausible
-        reaction mechanisms for carbon capture and predict trends in diffusion coefficient changes.
-        This work was presented at the Fall 2019 Materials Research Society Conference in Boston.
+        I also studied UIO-66 metal-organic frameworks with the Lattice Boltzmann model to propose reaction mechanisms for
+        carbon capture and predict how diffusion coefficients would shift. I presented this work at the Fall 2019 Materials
+        Research Society Conference in Boston.
       </p>
     </section>
 
     <!-- PROJECT 9: Hydrogel Tribology Review -->
-    <section class="section project-detail">
-      <h2>Hydrogel Tribology &mdash; Literature Review &amp; Critical Analysis</h2>
+    <section class="section project-detail reveal">
+      <h2>Hydrogel Tribology: Literature Review &amp; Critical Analysis</h2>
       <div class="project-detail__meta">
         <span class="tag">Materials Science</span>
         <span class="tag">Tribology</span>
@@ -212,10 +216,9 @@
         <span class="tag">Academic Writing</span>
       </div>
       <p>
-        A graduate-level critical review examining three recent frontier contributions to hydrogel tribology,
-        written as part of my M.S.E. coursework at Penn. The review analyzes and compares three experimental
-        approaches for controlling friction in soft hydrated materials, with implications for biomedical device
-        coatings, artificial cartilage, contact lenses, and soft robotics.
+        A graduate-level critical review of three recent frontier papers in hydrogel tribology, written for my M.S.E.
+        coursework at Penn. It compares three experimental approaches to controlling friction in soft hydrated materials,
+        which matters for biomedical device coatings, artificial cartilage, contact lenses, and soft robotics.
       </p>
       <p>
         The three works examined are: (1) ion-dependent frictional modulation in PVA hydrogels via the Hofmeister
@@ -225,12 +228,11 @@
         polymer brushes onto a supramolecular network (Liu et al., <em>Langmuir</em> 2026).
       </p>
       <p>
-        The review synthesizes lubrication mechanisms (poroelastic weeping, hydrodynamic, boundary), provides
-        original critical analysis of each study's methodology and limitations, and identifies three unifying
-        structure&ndash;property relationships: surface hydration governs boundary friction regardless of chemical
-        strategy; decoupling surface structure from bulk mechanics is the central design principle for
-        load-bearing yet lubricious hydrogels; and dynamic friction tunability via stimuli-responsive surfaces
-        is the frontier of the field.
+        It pulls together the main lubrication mechanisms (poroelastic weeping, hydrodynamic, and boundary), works through
+        each study's methods and limitations, and draws out a few common structure&ndash;property relationships. Surface
+        hydration sets boundary friction no matter the chemistry. Separating surface structure from bulk mechanics is the key
+        to hydrogels that bear load but still slide easily. And tuning friction on demand through stimuli-responsive surfaces
+        is where the field is heading.
       </p>
       <div class="cta-row">
         <a href="images/hydrogel_tribology.pdf" class="btn btn--outline" target="_blank" rel="noopener">Read Full Paper (PDF) &rarr;</a>
@@ -238,8 +240,8 @@
     </section>
 
     <!-- PROJECT 10: CounselAI Customer Needs Document -->
-    <section class="section project-detail">
-      <h2>CounselAI &mdash; Customer Needs Document</h2>
+    <section class="section project-detail reveal">
+      <h2>CounselAI: Customer Needs Document</h2>
       <div class="project-detail__meta">
         <span class="tag tag--red">Product Management</span>
         <span class="tag tag--red">Customer Discovery</span>
@@ -248,25 +250,24 @@
         <span class="tag tag--red">Legal AI</span>
       </div>
       <p>
-        A customer discovery and market research document produced for the Engineering Product Management
-        course as part of Penn's entrepreneurship class offerings (Spring 2026). The document defines the product opportunity,
-        target segment, and ranked customer needs for CounselAI &mdash; a proposed litigation-first AI legal
-        assistant designed for small to mid-size law firms (5&ndash;200 attorneys).
+        A customer discovery and market research document I wrote for the Engineering Product Management
+        course, part of Penn's entrepreneurship class offerings (Spring 2026). It defines the product opportunity,
+        the target segment, and the ranked customer needs for CounselAI, a proposed litigation-first AI legal
+        assistant for small to mid-size law firms (5 to 200 attorneys).
       </p>
       <p>
-        The research involved 5 primary user interviews with practicing attorneys and firm administrators, plus
-        2 supplemental simulated profiles, validated against secondary sources including the 2025 Clio Legal
-        Trends Report, Draftwise Legal AI Landscape Guide, and Artificial Lawyer industry surveys. The document
-        covers market sizing ($3.1B growing to $10.8B by 2030), competitive landscape analysis (Harvey, Legora,
-        August, Thomson Reuters CoCounsel, Draftwise), user personas, and a value proposition statement.
+        The research came from 5 primary interviews with practicing attorneys and firm administrators, plus 2
+        supplemental simulated profiles, checked against secondary sources like the 2025 Clio Legal Trends Report,
+        the Draftwise Legal AI Landscape Guide, and Artificial Lawyer industry surveys. The document covers market
+        sizing ($3.1B growing to $10.8B by 2030), the competitive landscape (Harvey, Legora, August, Thomson Reuters
+        CoCounsel, Draftwise), user personas, and a value proposition statement.
       </p>
       <p>
-        The key product insight: attorneys don&rsquo;t distrust AI because it&rsquo;s slow &mdash; they distrust
-        it because they can&rsquo;t verify it. The design principle that follows is that every AI output must
-        show its source inline at the point of use, making attorney verification a net time gain rather than
-        a net time loss. The identified white space is a research-to-draft workflow in a single tool at a price
-        point accessible to firms of 5&ndash;20 attorneys &mdash; a gap August (transactional focus, $375/user/month)
-        and Harvey/Legora (enterprise onboarding) both leave open.
+        The key insight: attorneys don&rsquo;t distrust AI because it&rsquo;s slow. They distrust it because they
+        can&rsquo;t verify it. So the design principle is simple: every AI output has to show its source inline,
+        right where you use it, so checking the work saves time instead of costing it. The white space is a
+        research-to-draft workflow in one tool, priced for firms of 5 to 20 attorneys. August (transactional focus,
+        $375/user/month) and Harvey/Legora (enterprise onboarding) both leave that gap open.
       </p>
       <div class="cta-row">
         <a href="images/CounselAI_Customer_Needs.pdf" class="btn btn--red" target="_blank" rel="noopener">Read Full Document (PDF) &rarr;</a>
@@ -275,6 +276,13 @@
   </main>
 
   <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="mailto:jalaj.mehta5@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/jalaj-s-mehta/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
     <p>&copy; <span id="year"></span> Jalaj Mehta. All rights reserved.</p>
   </footer>
   <script src="js/script.js"></script>

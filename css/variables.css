@@ -1,30 +1,68 @@
-/* Color palette & typography variables */
+/* ============================================================
+   Design tokens — refined academic palette & typography
+   Columbia blue (Pantone 292) + Penn red (Pantone 200) on a
+   warm-paper light theme.
+   ============================================================ */
 :root {
-  /* White base with Columbia blue (Pantone 292) + Penn red (Pantone 200) */
-  --color-bg: #ffffff;
-  --color-bg-elevated: #f4f7fc;
-  --color-surface: #e8eef6;
+  /* Surfaces — warm off-white "paper" for a refined, editorial feel */
+  --color-bg: #fbfaf7;
+  --color-bg-elevated: #ffffff;
+  --color-surface: #f1f3f8;
 
-  /* Columbia blue (Pantone 292) */
-  --color-blue: #4A86C8;
-  --color-blue-light: #75AADB;
-  --color-blue-dark: #2D6EA8;
+  /* Columbia blue family */
+  --color-blue: #2f6db0;
+  --color-blue-light: #75aadb;
+  --color-blue-dark: #1f4f86;
+  --color-blue-tint: rgba(47, 109, 176, 0.08);
 
-  /* Penn red (Pantone 200) */
-  --color-red: #990000;
-  --color-red-light: #B31B1B;
+  /* Penn red family */
+  --color-red: #8a0d12;
+  --color-red-light: #b31b1b;
+  --color-red-tint: rgba(138, 13, 18, 0.07);
 
-  --color-text: #1a1a1a;
-  --color-text-muted: #555555;
-  --color-border: rgba(74, 134, 200, 0.22);
+  /* Ink / text */
+  --color-text: #16202b;
+  --color-text-muted: #51606e;
+  --color-text-faint: #7a8794;
 
-  --font-sans: 'Roboto', system-ui, sans-serif;
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
+  /* Lines & borders */
+  --color-border: rgba(22, 32, 43, 0.1);
+  --color-border-strong: rgba(22, 32, 43, 0.16);
+
+  /* Brand gradient accent */
+  --gradient-accent: linear-gradient(120deg, var(--color-blue) 0%, var(--color-blue-dark) 55%, var(--color-red) 140%);
+  --gradient-soft: linear-gradient(160deg, #f6f9fd 0%, #fbfaf7 60%);
+
+  /* Typography */
+  --font-serif: 'Fraunces', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Spacing scale */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
-  --space-xl: 2rem;
-  --space-2xl: 3rem;
-  --radius: 8px;
-  --transition: 0.2s ease;
+  --space-xl: 2.25rem;
+  --space-2xl: 3.5rem;
+  --space-3xl: 5.5rem;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 1px 2px rgba(22, 32, 43, 0.06), 0 2px 6px rgba(22, 32, 43, 0.05);
+  --shadow-md: 0 6px 18px rgba(22, 32, 43, 0.08), 0 2px 6px rgba(22, 32, 43, 0.05);
+  --shadow-lg: 0 18px 48px rgba(22, 32, 43, 0.12), 0 6px 16px rgba(22, 32, 43, 0.06);
+  --shadow-blue: 0 16px 40px rgba(47, 109, 176, 0.22);
+
+  /* Motion */
+  --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Layout */
+  --content-width: 1020px;
 }

@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile &mdash; Jalaj Mehta</title>
+  <title>Profile: Jalaj Mehta</title>
+  <meta name="description" content="Profile of Jalaj Sanjay Mehta: education at Columbia and Penn, professional experience, research, skills, publications, and honors.">
+  <meta name="theme-color" content="#2f6db0">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Profile: Jalaj Mehta">
+  <meta property="og:description" content="Education, research, professional experience, skills, and publications.">
+  <meta property="og:image" content="images/jalaj_headshot.jpeg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+  <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__brand"><span>Jalaj Mehta</span></a>
       <a href="index.html" class="nav-link">Home</a>
       <a href="about.html" class="nav-link nav-link--active">Profile</a>
       <a href="projects.html" class="nav-link">Projects</a>
@@ -20,10 +28,11 @@
   </header>
 
   <main class="main">
-    <section class="page-header">
+    <section class="page-header reveal">
       <div class="page-header__row">
         <div>
-          <h1 class="page-header__title">Profile</h1>
+          <span class="page-header__eyebrow">Profile</span>
+          <h1 class="page-header__title">Background &amp; Experience</h1>
           <p class="page-header__subtitle">Materials Science &amp; Engineering &middot; Computer Science &middot; Product &amp; Commercialization</p>
         </div>
         <img src="images/jalaj_headshot.jpeg" alt="Jalaj Mehta headshot" class="page-header__photo">
@@ -31,7 +40,8 @@
     </section>
 
     <!-- EDUCATION -->
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Academics</span>
       <h2>Education</h2>
 
       <div class="timeline">
@@ -40,9 +50,9 @@
           <div class="timeline__content">
             <h3>University of Pennsylvania</h3>
             <p class="timeline__meta">School of Engineering and Applied Science &bull; M.S.E. Materials Science &amp; Engineering &bull; GPA: 3.85</p>
-            <p class="timeline__date">2025 &ndash; August 2026 (expected)</p>
+            <p class="timeline__date">2025 to August 2026 (expected)</p>
             <p><strong>Fall 2025:</strong> Structure &amp; Function of Biological Materials, Nanoscale Science &amp; Engineering, Electrochemical Engineering of Materials, Introduction to Polymers.</p>
-            <p><strong>Spring 2026:</strong> Nanofabrication &amp; Nanocharacterization (hands-on cleanroom — optical/e-beam lithography, PVD, etching, directed self-assembly, quantum dot characterization, graphene devices); Commercialization of Academic Science (Wharton/Mack Institute — customer discovery, go-to-market strategy, competitive analysis for early-stage Penn research); Engineering Product Management (product life-cycle strategy, design thinking, agile methods, portfolio metrics); Nanotribology; Machine Learning &amp; Its Applications in Materials Science.</p>
+            <p><strong>Spring 2026:</strong> Nanofabrication &amp; Nanocharacterization (hands-on cleanroom work: optical/e-beam lithography, PVD, etching, directed self-assembly, quantum dot characterization, graphene devices); Commercialization of Academic Science (Wharton/Mack Institute, covering customer discovery, go-to-market strategy, and competitive analysis for early-stage Penn research); Engineering Product Management (product life-cycle strategy, design thinking, agile methods, portfolio metrics); Nanotribology; Machine Learning &amp; Its Applications in Materials Science.</p>
           </div>
         </div>
         <div class="timeline__item">
@@ -50,7 +60,7 @@
           <div class="timeline__content">
             <h3>Columbia University</h3>
             <p class="timeline__meta">Fu Foundation School of Engineering and Applied Science &bull; B.S. Materials Science &amp; Engineering, Minor in Computer Science &bull; GPA: 3.65</p>
-            <p class="timeline__date">2021 &ndash; May 2025</p>
+            <p class="timeline__date">2021 to May 2025</p>
             <p>Dean's List all eligible semesters (16+ credits). Bonomi Scholar (Summer 2022). Principled Action Leadership &amp; Engagement Award.</p>
             <p><strong>Relevant coursework:</strong> Data Structures in Java, Advanced Programming, Discrete Mathematics, Introduction to Databases, User Interface Design, Foundations of MSE, Ceramics &amp; Composites, Crystallography, Electronic &amp; Magnetic Properties of Solids, Kinetics of Transformations, Interfacial Engineering, Carbon Capture, Energy &amp; Energy Conservation.</p>
           </div>
@@ -59,7 +69,8 @@
     </section>
 
     <!-- PROFESSIONAL EXPERIENCE -->
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Work</span>
       <h2>Professional Experience</h2>
 
       <div class="timeline">
@@ -68,11 +79,11 @@
           <div class="timeline__content">
             <h3>August</h3>
             <p class="timeline__meta">Product Developer &bull; Legal AI Systems</p>
-            <p class="timeline__date">December 2025 &ndash; Present &bull; Remote</p>
+            <p class="timeline__date">December 2025 to present &bull; Remote</p>
             <ul>
-              <li>Review user and AI assistant interaction data to surface bugs; translate findings into structured feedback for the engineering team.</li>
-              <li>Advise on feature prioritization and programming direction, bridging user needs and technical implementation.</li>
-              <li>Train cross-functional teammates, improving product-development velocity and workflow consistency.</li>
+              <li>Comb through user and AI assistant interaction logs to find bugs, then write up what I find so the engineering team can act on it.</li>
+              <li>Advise on what to build next and how, sitting between what users actually need and what the code can do.</li>
+              <li>Train teammates across functions so the product ships faster and everyone works the same way.</li>
             </ul>
           </div>
         </div>
@@ -81,11 +92,11 @@
           <div class="timeline__content">
             <h3>Northrop Grumman Mission Systems</h3>
             <p class="timeline__meta">College Technical Intern &bull; Transistor Process Control</p>
-            <p class="timeline__date">June 2024 &ndash; August 2024 &bull; Linthicum, MD</p>
+            <p class="timeline__date">June 2024 to August 2024 &bull; Linthicum, MD</p>
             <ul>
-              <li>Built a Python application with a UX to ingest bulk transistor data across file types, deriving I&ndash;V curves, capacitance, conductance, and power parameters from raw measurements.</li>
-              <li>Integrated a virtual-source transistor model into Python, validated against measured data, and extended it with carrier freeze-out corrections for cryogenic operation.</li>
-              <li>Benchmarked transistors from multiple manufacturers using lab test equipment, delivering process-control insights to the team.</li>
+              <li>Built a Python app with a simple interface that took in bulk transistor data across file types and turned raw measurements into I&ndash;V curves, capacitance, conductance, and power parameters.</li>
+              <li>Ported a virtual-source transistor model into Python, checked it against measured data, and added carrier freeze-out corrections so it held up at cryogenic temperatures.</li>
+              <li>Benchmarked transistors from several manufacturers on lab test equipment and reported the process-control findings back to the team.</li>
             </ul>
           </div>
         </div>
@@ -94,10 +105,10 @@
           <div class="timeline__content">
             <h3>Columbia University Undergraduate Student Life</h3>
             <p class="timeline__meta">Community Events Coordinator &bull; New Student Orientation Program (NSOP)</p>
-            <p class="timeline__date">May 2023 &ndash; September 2023 &bull; New York, NY</p>
+            <p class="timeline__date">May 2023 to September 2023 &bull; New York, NY</p>
             <ul>
-              <li>Designed and led the full orientation schedule for Columbia's incoming class; trained hundreds of Orientation Leaders and Crew Captains.</li>
-              <li>Collaborated with senior administration to develop Columbia-specific programming; served as primary external contact for community-building events.</li>
+              <li>Built and ran the full orientation schedule for Columbia's incoming class, and trained hundreds of Orientation Leaders and Crew Captains.</li>
+              <li>Worked with senior administration on Columbia-specific programming and was the main outside contact for community-building events.</li>
             </ul>
           </div>
         </div>
@@ -105,56 +116,57 @@
     </section>
 
     <!-- RESEARCH EXPERIENCE -->
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Labs</span>
       <h2>Research Experience</h2>
 
       <div class="timeline">
         <div class="timeline__item">
           <div class="timeline__marker"></div>
           <div class="timeline__content">
-            <h3>Columbia MSE &mdash; Senior Design Project</h3>
+            <h3>Columbia MSE, Senior Design Project</h3>
             <p class="timeline__meta">Research Assistant &bull; Liquid Electrolytes &amp; Electrochemical Cells</p>
-            <p class="timeline__date">October 2024 &ndash; May 2025 &bull; New York, NY</p>
+            <p class="timeline__date">October 2024 to May 2025 &bull; New York, NY</p>
             <ul>
-              <li>Used qNMR and DSC to construct phase diagrams of organic liquid electrolytes; built electrochemical cells from scratch as part of next-generation lightweight, high-energy-density battery research.</li>
-              <li>Built a KNN machine learning model to predict electrolyte phase diagrams based on collected experimental data.</li>
+              <li>Used qNMR and DSC to map phase diagrams of organic liquid electrolytes, and built electrochemical cells from scratch for research into lighter, higher-energy-density batteries.</li>
+              <li>Trained a KNN machine learning model to predict electrolyte phase diagrams from the experimental data we collected.</li>
             </ul>
           </div>
         </div>
         <div class="timeline__item">
           <div class="timeline__marker"></div>
           <div class="timeline__content">
-            <h3>Gang Lab &mdash; Columbia Chemical Engineering &amp; Brookhaven National Lab</h3>
+            <h3>Gang Lab, Columbia Chemical Engineering &amp; Brookhaven National Lab</h3>
             <p class="timeline__meta">Research Assistant &bull; Visiting Researcher at Brookhaven National Lab</p>
-            <p class="timeline__date">February 2022 &ndash; May 2024 &bull; New York, NY &amp; Brookhaven, NY</p>
+            <p class="timeline__date">February 2022 to May 2024 &bull; New York, NY &amp; Brookhaven, NY</p>
             <ul>
-              <li>Established a novel metallization procedure for DNA crystal lattices via iron-oxide infiltration; synthesized DNA crystals and characterized mechanical properties via nanoindentation.</li>
-              <li>Employed SEM, TEM, FIB, optical microscopy, XRD, and EDX for structural and compositional characterization.</li>
-              <li>Developed algorithms to extract elastic modulus and hardness from raw nanoindentation data.</li>
+              <li>Worked out a new way to metallize DNA crystal lattices by infiltrating them with iron oxide, then synthesized the crystals and measured their mechanical properties with nanoindentation.</li>
+              <li>Used SEM, TEM, FIB, optical microscopy, XRD, and EDX to characterize structure and composition.</li>
+              <li>Wrote algorithms that pulled elastic modulus and hardness out of raw nanoindentation data.</li>
             </ul>
           </div>
         </div>
         <div class="timeline__item">
           <div class="timeline__marker"></div>
           <div class="timeline__content">
-            <h3>National Energy Technology Lab &mdash; DOE Mickey Leland Fellowship</h3>
+            <h3>National Energy Technology Lab, DOE Mickey Leland Fellowship</h3>
             <p class="timeline__meta">Undergraduate Fellow &bull; Materials Engineering &amp; Manufacturing</p>
-            <p class="timeline__date">June 2023 &ndash; August 2023 &bull; Albany, OR (virtual &amp; on-site)</p>
+            <p class="timeline__date">June 2023 to August 2023 &bull; Albany, OR (virtual &amp; on-site)</p>
             <ul>
-              <li>Authored a Python program for image processing of TEM micrographs, implementing 3D matrix mathematics to compute crystal grain misorientation angles and axes; packaged as a Tkinter executable.</li>
-              <li>Presented work at a U.S. Department of Energy Symposium in Washington, D.C.</li>
+              <li>Wrote a Python program that processed TEM micrographs, using 3D matrix math to compute crystal grain misorientation angles and axes, then packaged it as a Tkinter executable.</li>
+              <li>Presented the work at a U.S. Department of Energy Symposium in Washington, D.C.</li>
             </ul>
           </div>
         </div>
         <div class="timeline__item">
           <div class="timeline__marker"></div>
           <div class="timeline__content">
-            <h3>Garcia Research Program &mdash; SUNY Stony Brook University</h3>
+            <h3>Garcia Research Program, SUNY Stony Brook University</h3>
             <p class="timeline__meta">Student Researcher &bull; Polymer Engineering</p>
-            <p class="timeline__date">July 2019 &ndash; March 2021 &bull; Stony Brook, NY</p>
+            <p class="timeline__date">July 2019 to March 2021 &bull; Stony Brook, NY</p>
             <ul>
-              <li>Developed a biodegradable PVA-based flame-retardant hydrogel; modeled UiO-66 MOF carbon-capture properties via the Lattice Boltzmann method.</li>
-              <li>Published in ACS Biomacromolecules (2021); presented at the Fall 2019 MRS Conference, Boston.</li>
+              <li>Developed a biodegradable PVA-based flame-retardant hydrogel, and modeled the carbon-capture properties of a UiO-66 MOF with the Lattice Boltzmann method.</li>
+              <li>Published the hydrogel work in ACS Biomacromolecules (2021) and presented at the Fall 2019 MRS Conference in Boston.</li>
             </ul>
           </div>
         </div>
@@ -162,7 +174,8 @@
     </section>
 
     <!-- ACTIVITIES & LEADERSHIP -->
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Service</span>
       <h2>Activities &amp; Leadership</h2>
 
       <div class="timeline">
@@ -171,11 +184,11 @@
           <div class="timeline__content">
             <h3>Columbia University Senate &amp; Engineering Student Council</h3>
             <p class="timeline__meta">SEAS Undergraduate Senator</p>
-            <p class="timeline__date">October 2023 &ndash; May 2025 &bull; New York, NY</p>
+            <p class="timeline__date">October 2023 to May 2025 &bull; New York, NY</p>
             <ul>
-              <li>Represented engineering undergraduates in Columbia's primary shared-governance body; served on Student Affairs, Rules of University Conduct, and Structures &amp; Operations committees.</li>
-              <li>Collaborated with administration, faculty, and peer councils to advance student-facing proposals and host community programming.</li>
-              <li>Recipient of the Principled Action Leadership and Engagement Award.</li>
+              <li>Represented engineering undergraduates in Columbia's main shared-governance body, and sat on the Student Affairs, Rules of University Conduct, and Structures &amp; Operations committees.</li>
+              <li>Worked with administration, faculty, and peer councils to move student-facing proposals forward and run community programming.</li>
+              <li>Received the Principled Action Leadership and Engagement Award.</li>
             </ul>
           </div>
         </div>
@@ -183,7 +196,8 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Toolkit</span>
       <h2>Skills</h2>
 
       <p class="skills-section-label">Programming &amp; Tools</p>
@@ -227,35 +241,45 @@
     </section>
 
     <!-- PUBLICATIONS & PRESENTATIONS -->
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Output</span>
       <h2>Publications &amp; Presentations</h2>
       <ul>
         <li>Mehta et al., &ldquo;Synthesis of an Effective Flame-Retardant Hydrogel for Skin Protection Using Xanthan Gum and RDP-Coated Starch,&rdquo; <em>ACS Biomacromolecules</em>, 2021.</li>
-        <li>Presenter, Fall 2019 Materials Research Society Conference, Boston &mdash; Flame Retardancy of Biodegradable PVA Hydrogels.</li>
-        <li>Presenter, U.S. Department of Energy Symposium, Washington, D.C., 2023 &mdash; TEM Image Processing for Crystal Grain Analysis.</li>
+        <li>Presenter, Fall 2019 Materials Research Society Conference, Boston: Flame Retardancy of Biodegradable PVA Hydrogels.</li>
+        <li>Presenter, U.S. Department of Energy Symposium, Washington, D.C., 2023: TEM Image Processing for Crystal Grain Analysis.</li>
       </ul>
     </section>
 
     <!-- HONORS & LANGUAGES -->
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Recognition</span>
       <h2>Honors &amp; Languages</h2>
       <ul>
         <li>Columbia University Bonomi Scholar (Summer 2022)</li>
-        <li>Columbia SEAS Dean's List &mdash; all eligible semesters</li>
+        <li>Columbia SEAS Dean's List (all eligible semesters)</li>
         <li>Mickey Leland Energy Fellow (2023)</li>
         <li>Principled Action Leadership and Engagement Award</li>
       </ul>
       <p><strong>Languages:</strong> English (native), Gujarati (native), Spanish (conversational)</p>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="cta-row">
-        <a href="images/Jalaj_CV.pdf" class="btn" target="_blank" rel="noopener">Download Full CV (PDF) &rarr;</a>
+        <a href="images/Jalaj_CV.pdf" class="btn" target="_blank" rel="noopener">Download Full CV (PDF)</a>
+        <a href="projects.html" class="btn btn--outline">Browse Projects</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="mailto:jalaj.mehta5@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/jalaj-s-mehta/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
     <p>&copy; <span id="year"></span> Jalaj Mehta. All rights reserved.</p>
   </footer>
   <script src="js/script.js"></script>

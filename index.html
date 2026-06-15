@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jalaj Mehta</title>
+  <title>Jalaj Mehta: Materials Science Engineer &amp; Product Developer</title>
+  <meta name="description" content="Jalaj Sanjay Mehta. Materials Science &amp; Engineering (Columbia B.S., Penn M.S.E.), researcher, and product developer who works across materials engineering and software.">
+  <meta name="author" content="Jalaj Sanjay Mehta">
+  <meta name="theme-color" content="#2f6db0">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jalaj Sanjay Mehta">
+  <meta property="og:description" content="Materials Science &amp; Engineering · Researcher · Product Developer.">
+  <meta property="og:image" content="images/grad_photo.jpg">
+  <meta property="og:url" content="https://jalajsm.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__brand"><span>Jalaj Mehta</span></a>
       <a href="index.html" class="nav-link nav-link--active">Home</a>
       <a href="about.html" class="nav-link">Profile</a>
       <a href="projects.html" class="nav-link">Projects</a>
@@ -21,18 +33,39 @@
 
   <main class="main">
     <section class="hero">
-      <div class="hero__photo-wrapper">
+      <div class="hero__photo-wrapper reveal">
         <img src="images/grad_photo.jpg" alt="Jalaj Mehta" class="hero__photo">
       </div>
-      <h1 class="hero__title">Jalaj Sanjay Mehta</h1>
-      <p class="hero__subtitle">Materials Science &amp; Engineering &bull; Product Developer &bull; Commercialization</p>
-      <p class="hero__tagline">
-        M.S.E. candidate at the University of Pennsylvania and Columbia University graduate(B.S. in Materials Science & Engineering),
-        with a passion for materials research, data-driven engineering, and product development.
+      <span class="hero__eyebrow reveal">Materials Science &middot; Software &middot; Product</span>
+      <h1 class="hero__title reveal">Jalaj Sanjay Mehta</h1>
+      <p class="hero__subtitle reveal">
+        <span>Materials Science &amp; Engineering</span>
+        <span>Product Developer</span>
+        <span>Commercialization</span>
       </p>
+      <p class="hero__tagline reveal">
+        M.S.E. candidate at the University of Pennsylvania and a Columbia University graduate (B.S. in Materials
+        Science &amp; Engineering). I work on materials research, data-driven engineering, and product development.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="about.html" class="btn">View Background &amp; CV</a>
+        <a href="projects.html" class="btn btn--outline">Browse Projects</a>
+      </div>
+      <div class="hero__social reveal">
+        <a href="mailto:jalaj.mehta5@gmail.com" aria-label="Email Jalaj">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jalaj-s-mehta/" target="_blank" rel="noopener" aria-label="Jalaj on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.99H5.67v8.35h2.67zM7 8.84a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.5v-4.93c0-2.36-1.26-3.46-2.94-3.46a2.54 2.54 0 0 0-2.3 1.27v-1.09h-2.66c.04.75 0 8.35 0 8.35h2.66v-4.66c0-.24.02-.48.09-.65.19-.48.62-.97 1.35-.97.96 0 1.34.72 1.34 1.78v4.5h2.66z"/></svg>
+        </a>
+        <a href="images/Jalaj_CV.pdf" target="_blank" rel="noopener" aria-label="Download CV">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M12 11v6"/><path d="m9 14 3 3 3-3"/></svg>
+        </a>
+      </div>
     </section>
 
-    <section class="section highlights">
+    <section class="section highlights reveal">
+      <span class="section__eyebrow">Overview</span>
       <h2>At a Glance</h2>
       <div class="highlights-grid">
         <div class="highlight-card">
@@ -43,7 +76,7 @@
         <div class="highlight-card">
           <span class="highlight-card__icon">&#128300;</span>
           <h3>Research</h3>
-          <p>Research experience spanning DNA crystal metalization (Gang Lab / Brookhaven National Lab), liquid electrolyte phase diagrams, and polymer flame retardants with a publication in ACS Biomacromolecules.</p>
+          <p>Work across DNA crystal metalization (Gang Lab / Brookhaven National Lab), liquid electrolyte phase diagrams, and polymer flame retardants, including a publication in ACS Biomacromolecules.</p>
         </div>
         <div class="highlight-card">
           <span class="highlight-card__icon">&#128187;</span>
@@ -58,26 +91,27 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Introduction</span>
       <h2>About Me</h2>
       <p>
-        I am a dedicated engineer with a strong foundation in materials science, applied research, and computer science.
-        Throughout my academic career at Columbia and Penn, I have maintained Dean's List honors and pursued hands-on research
-        across multiple disciplines &mdash; from synthesizing DNA crystals and characterizing them via electron microscopy, to
-        developing machine-learning models for electrolyte phase diagrams, to building products.
+        I'm an engineer with a background in materials science, applied research, and computer science. At Columbia and Penn
+        I made the Dean's List and spent most of my time in the lab. I've synthesized DNA crystals and imaged them under electron
+        microscopes, built machine-learning models for electrolyte phase diagrams, and shipped products.
       </p>
       <p>
-        My professional experience includes a technical internship at Northrop Grumman Mission Systems, a fellowship at the
-        National Energy Technology Laboratory, and a current product development role at August, where I work on legal AI systems.
-        I work at the intersection of materials engineering and software, and I thrive when asked to solve complex, interdisciplinary problems with create and efficient solutions.
+        Along the way I interned at Northrop Grumman Mission Systems, held a fellowship at the National Energy Technology Laboratory,
+        and now work on legal AI systems as a product developer at August. My work sits between materials engineering and software,
+        and the problems I like best are the messy interdisciplinary ones that don't have an obvious answer.
       </p>
       <div class="cta-row">
-        <a href="about.html" class="btn">View My Background &amp; CV &rarr;</a>
-        <a href="projects.html" class="btn btn--outline">Browse Projects &rarr;</a>
+        <a href="about.html" class="btn">View My Background &amp; CV</a>
+        <a href="projects.html" class="btn btn--outline">Browse Projects</a>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
+      <span class="section__eyebrow">Contact</span>
       <h2>Get in Touch</h2>
       <p>
         <strong>Email:</strong> <a href="mailto:jalaj.mehta5@gmail.com">jalaj.mehta5@gmail.com</a><br>
@@ -87,6 +121,13 @@
   </main>
 
   <footer class="site-footer">
+    <div class="site-footer__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">Profile</a>
+      <a href="projects.html">Projects</a>
+      <a href="mailto:jalaj.mehta5@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/jalaj-s-mehta/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
     <p>&copy; <span id="year"></span> Jalaj Mehta. All rights reserved.</p>
   </footer>
   <script src="js/script.js"></script>
