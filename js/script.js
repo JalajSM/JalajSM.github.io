@@ -16,6 +16,23 @@ function setFooterYear() {
         el.textContent = String(new Date().getFullYear());
     }
 }
+function setupHudClock() {
+    const el = document.getElementById('hud-clock');
+    if (!el)
+        return;
+    const tick = () => {
+        const now = new Date();
+        const time = now.toLocaleTimeString('en-US', {
+            hour12: false,
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+        });
+        el.textContent = `NYC ${time}`;
+    };
+    tick();
+    setInterval(tick, 1000);
+}
 function setActiveNavLink() {
     const currentPath = getCurrentPath();
     const links = document.querySelectorAll('.nav-link');
@@ -95,6 +112,7 @@ function setupLightbox() {
 }
 function init() {
     setFooterYear();
+    setupHudClock();
     setActiveNavLink();
     setupHeaderShadow();
     setupScrollReveal();

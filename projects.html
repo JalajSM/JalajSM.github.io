@@ -13,7 +13,7 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,7 +34,99 @@
       <p class="page-header__subtitle">A selection of research, engineering, and software projects.</p>
     </section>
 
-    <!-- PROJECT 1: Senior Design / Yang Lab -->
+    <!-- 1 · CounselAI Customer Needs Document (Penn, Spring 2026) -->
+    <section class="section project-detail reveal">
+      <h2>CounselAI: Customer Needs Document</h2>
+      <div class="project-detail__meta">
+        <span class="tag tag--red">Product Management</span>
+        <span class="tag tag--red">Customer Discovery</span>
+        <span class="tag tag--red">Market Research</span>
+        <span class="tag tag--red">Engineering Product Management</span>
+        <span class="tag tag--red">Legal AI</span>
+      </div>
+      <p>
+        A customer discovery and market research document I wrote for the Engineering Product Management
+        course, part of Penn's entrepreneurship class offerings (Spring 2026). It defines the product opportunity,
+        the target segment, and the ranked customer needs for CounselAI, a proposed litigation-first AI legal
+        assistant for small to mid-size law firms (5 to 200 attorneys).
+      </p>
+      <p>
+        The research came from 5 primary interviews with practicing attorneys and firm administrators, plus 2
+        supplemental simulated profiles, checked against secondary sources like the 2025 Clio Legal Trends Report,
+        the Draftwise Legal AI Landscape Guide, and Artificial Lawyer industry surveys. The document covers market
+        sizing ($3.1B growing to $10.8B by 2030), the competitive landscape (Harvey, Legora, August, Thomson Reuters
+        CoCounsel, Draftwise), user personas, and a value proposition statement.
+      </p>
+      <p>
+        The key insight: attorneys don&rsquo;t distrust AI because it&rsquo;s slow. They distrust it because they
+        can&rsquo;t verify it. So the design principle is simple: every AI output has to show its source inline,
+        right where you use it, so checking the work saves time instead of costing it. The white space is a
+        research-to-draft workflow in one tool, priced for firms of 5 to 20 attorneys. August (transactional focus,
+        $375/user/month) and Harvey/Legora (enterprise onboarding) both leave that gap open.
+      </p>
+      <div class="cta-row">
+        <a href="images/CounselAI_Customer_Needs.pdf" class="btn btn--red" target="_blank" rel="noopener">Read Full Document (PDF) &rarr;</a>
+      </div>
+    </section>
+
+    <!-- 2 · Technical Writing: Heat in Semiconductors -->
+    <section class="section project-detail reveal">
+      <h2>Technical Writing: The Heat Problem in Semiconductors</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Technical Writing</span>
+        <span class="tag">Semiconductors</span>
+        <span class="tag">Materials Science</span>
+      </div>
+      <p>
+        A writing sample on the growing thermal management problem in the semiconductor industry. It walks through the physics
+        of heat generation in modern chips (dynamic power dissipation, leakage currents, and electromigration), then looks at
+        two frontier fixes: topological semimetals (TSMs) in place of copper interconnects, and biomimetic microfluidic cooling.
+      </p>
+      <p>
+        I explain why TSMs resist surface scattering at the nanoscale thanks to their Fermi arc surface states, and how
+        microfluidic channels etched straight into silicon can cut peak temperatures by up to 65%. Both are cases of materials
+        science aimed squarely at one of computing's hardest bottlenecks.
+      </p>
+      <div class="cta-row">
+        <a href="images/Writing_Sample.pdf" class="btn btn--outline" target="_blank" rel="noopener">Read Full Writing Sample (PDF) &rarr;</a>
+      </div>
+    </section>
+
+    <!-- 3 · Hydrogel Tribology Review (Penn, 2025–2026) -->
+    <section class="section project-detail reveal">
+      <h2>Hydrogel Tribology: Literature Review &amp; Critical Analysis</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Materials Science</span>
+        <span class="tag">Tribology</span>
+        <span class="tag">Polymer Engineering</span>
+        <span class="tag">Penn MSE 5800</span>
+        <span class="tag">Academic Writing</span>
+      </div>
+      <p>
+        A graduate-level critical review of three recent frontier papers in hydrogel tribology, written for my M.S.E.
+        coursework at Penn. It compares three experimental approaches to controlling friction in soft hydrated materials,
+        which matters for biomedical device coatings, artificial cartilage, contact lenses, and soft robotics.
+      </p>
+      <p>
+        The three works examined are: (1) ion-dependent frictional modulation in PVA hydrogels via the Hofmeister
+        effect (Wu et al., <em>Macromolecules</em> 2025); (2) superlubricious polyacrylamide hydrogels engineered
+        through spontaneous oxygen-peroxidation gradients (Chau et al., <em>ACS Applied Materials &amp; Interfaces</em>
+        2023); and (3) dynamically tunable hydrogel friction through reversible host&ndash;guest regrafting of
+        polymer brushes onto a supramolecular network (Liu et al., <em>Langmuir</em> 2026).
+      </p>
+      <p>
+        It pulls together the main lubrication mechanisms (poroelastic weeping, hydrodynamic, and boundary), works through
+        each study's methods and limitations, and draws out a few common structure&ndash;property relationships. Surface
+        hydration sets boundary friction no matter the chemistry. Separating surface structure from bulk mechanics is the key
+        to hydrogels that bear load but still slide easily. And tuning friction on demand through stimuli-responsive surfaces
+        is where the field is heading.
+      </p>
+      <div class="cta-row">
+        <a href="images/hydrogel_tribology.pdf" class="btn btn--outline" target="_blank" rel="noopener">Read Full Paper (PDF) &rarr;</a>
+      </div>
+    </section>
+
+    <!-- 4 · Senior Design: Electrolyte Phase Diagrams (Columbia, 2024–2025) -->
     <section class="section project-detail reveal">
       <h2>Senior Design Project: Electrolyte Phase Diagrams</h2>
       <div class="project-detail__meta">
@@ -75,7 +167,55 @@
       </div>
     </section>
 
-    <!-- PROJECT 2: Gang Lab -->
+    <!-- 5 · PhotoLearn (Columbia UI Design, ~2024) -->
+    <section class="section project-detail reveal">
+      <h2>PhotoLearn: Interactive Photography Tutor</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Next.js</span>
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Flask</span>
+        <span class="tag">UI/UX Design</span>
+      </div>
+      <p>
+        PhotoLearn is a web app that teaches the fundamentals of photography through hands-on simulators, quizzes, and a
+        creative playground. We built it for Columbia's User Interface Design course (COMS W 4170), with real-time simulators
+        for ISO, aperture, and shutter speed.
+      </p>
+      <p>
+        It walks you through a step-by-step learning flow with interactive simulators and progress tracking, quizzes that mix
+        simulator and scenario questions, and a playground where you upload your own photos and change camera settings on the
+        fly. The frontend is Next.js/React/TypeScript, with a Flask backend that leaves room to grow the API.
+      </p>
+      <p><em>Team: Jalaj Mehta, Shivan Mukherjee, Allyce Chung, Janie</em></p>
+    </section>
+
+    <!-- 6 · Crystal Grain Analysis (Mickey Leland Fellowship, Summer 2023) -->
+    <section class="section project-detail reveal">
+      <h2>Crystal Grain Analysis Program: Mickey Leland Energy Fellowship</h2>
+      <div class="project-detail__meta">
+        <span class="tag">Python</span>
+        <span class="tag">Image Processing</span>
+        <span class="tag">Tkinter</span>
+        <span class="tag">Linear Algebra</span>
+        <span class="tag">DOE</span>
+      </div>
+      <div class="project-detail__gallery">
+        <img src="images/crystal_twin.gif" alt="Animation of crystal twin analysis from TEM images" class="project-detail__img" loading="lazy">
+      </div>
+      <p>
+        During my fellowship at the National Energy Technology Laboratory (part of the U.S. Department of Energy),
+        I wrote a Python program to automatically process transmission electron microscopy (TEM) images of metal alloy
+        microstructures.
+      </p>
+      <p>
+        It uses 3D matrix math to calculate crystal grain misorientation angles and axes from diffraction pattern data.
+        I packaged it as a standalone executable with a Tkinter interface so researchers who don't code could still run it.
+        I presented the work at a Department of Energy Symposium in Washington, D.C.
+      </p>
+    </section>
+
+    <!-- 7 · DNA Crystal Metalization (Gang Lab / Brookhaven, 2022–2024) -->
     <section class="section project-detail reveal">
       <h2>DNA Crystal Metalization: Gang Lab / Brookhaven National Lab</h2>
       <div class="project-detail__meta">
@@ -112,78 +252,7 @@
       </p>
     </section>
 
-    <!-- PROJECT 3: MLEM Fellowship -->
-    <section class="section project-detail reveal">
-      <h2>Crystal Grain Analysis Program: Mickey Leland Energy Fellowship</h2>
-      <div class="project-detail__meta">
-        <span class="tag">Python</span>
-        <span class="tag">Image Processing</span>
-        <span class="tag">Tkinter</span>
-        <span class="tag">Linear Algebra</span>
-        <span class="tag">DOE</span>
-      </div>
-      <div class="project-detail__gallery">
-        <img src="images/crystal_twin.gif" alt="Animation of crystal twin analysis from TEM images" class="project-detail__img" loading="lazy">
-      </div>
-      <p>
-        During my fellowship at the National Energy Technology Laboratory (part of the U.S. Department of Energy),
-        I wrote a Python program to automatically process transmission electron microscopy (TEM) images of metal alloy
-        microstructures.
-      </p>
-      <p>
-        It uses 3D matrix math to calculate crystal grain misorientation angles and axes from diffraction pattern data.
-        I packaged it as a standalone executable with a Tkinter interface so researchers who don't code could still run it.
-        I presented the work at a Department of Energy Symposium in Washington, D.C.
-      </p>
-    </section>
-
-    <!-- PROJECT 5: PhotoLearn -->
-    <section class="section project-detail reveal">
-      <h2>PhotoLearn: Interactive Photography Tutor</h2>
-      <div class="project-detail__meta">
-        <span class="tag">Next.js</span>
-        <span class="tag">React</span>
-        <span class="tag">TypeScript</span>
-        <span class="tag">Flask</span>
-        <span class="tag">UI/UX Design</span>
-      </div>
-      <p>
-        PhotoLearn is a web app that teaches the fundamentals of photography through hands-on simulators, quizzes, and a
-        creative playground. We built it for Columbia's User Interface Design course (COMS W 4170), with real-time simulators
-        for ISO, aperture, and shutter speed.
-      </p>
-      <p>
-        It walks you through a step-by-step learning flow with interactive simulators and progress tracking, quizzes that mix
-        simulator and scenario questions, and a playground where you upload your own photos and change camera settings on the
-        fly. The frontend is Next.js/React/TypeScript, with a Flask backend that leaves room to grow the API.
-      </p>
-      <p><em>Team: Jalaj Mehta, Shivan Mukherjee, Allyce Chung, Janie</em></p>
-    </section>
-
-    <!-- PROJECT 7: Writing Sample -->
-    <section class="section project-detail reveal">
-      <h2>Technical Writing: The Heat Problem in Semiconductors</h2>
-      <div class="project-detail__meta">
-        <span class="tag">Technical Writing</span>
-        <span class="tag">Semiconductors</span>
-        <span class="tag">Materials Science</span>
-      </div>
-      <p>
-        A writing sample on the growing thermal management problem in the semiconductor industry. It walks through the physics
-        of heat generation in modern chips (dynamic power dissipation, leakage currents, and electromigration), then looks at
-        two frontier fixes: topological semimetals (TSMs) in place of copper interconnects, and biomimetic microfluidic cooling.
-      </p>
-      <p>
-        I explain why TSMs resist surface scattering at the nanoscale thanks to their Fermi arc surface states, and how
-        microfluidic channels etched straight into silicon can cut peak temperatures by up to 65%. Both are cases of materials
-        science aimed squarely at one of computing's hardest bottlenecks.
-      </p>
-      <div class="cta-row">
-        <a href="images/Writing_Sample.pdf" class="btn btn--outline" target="_blank" rel="noopener">Read Full Writing Sample (PDF) &rarr;</a>
-      </div>
-    </section>
-
-    <!-- PROJECT 8: Garcia Research -->
+    <!-- 8 · Flame-Retardant Hydrogel Research (Garcia Program, 2019–2021) -->
     <section class="section project-detail reveal">
       <h2>Flame-Retardant Hydrogel Research: Garcia Program</h2>
       <div class="project-detail__meta">
@@ -203,75 +272,6 @@
         carbon capture and predict how diffusion coefficients would shift. I presented this work at the Fall 2019 Materials
         Research Society Conference in Boston.
       </p>
-    </section>
-
-    <!-- PROJECT 9: Hydrogel Tribology Review -->
-    <section class="section project-detail reveal">
-      <h2>Hydrogel Tribology: Literature Review &amp; Critical Analysis</h2>
-      <div class="project-detail__meta">
-        <span class="tag">Materials Science</span>
-        <span class="tag">Tribology</span>
-        <span class="tag">Polymer Engineering</span>
-        <span class="tag">Penn MSE 5800</span>
-        <span class="tag">Academic Writing</span>
-      </div>
-      <p>
-        A graduate-level critical review of three recent frontier papers in hydrogel tribology, written for my M.S.E.
-        coursework at Penn. It compares three experimental approaches to controlling friction in soft hydrated materials,
-        which matters for biomedical device coatings, artificial cartilage, contact lenses, and soft robotics.
-      </p>
-      <p>
-        The three works examined are: (1) ion-dependent frictional modulation in PVA hydrogels via the Hofmeister
-        effect (Wu et al., <em>Macromolecules</em> 2025); (2) superlubricious polyacrylamide hydrogels engineered
-        through spontaneous oxygen-peroxidation gradients (Chau et al., <em>ACS Applied Materials &amp; Interfaces</em>
-        2023); and (3) dynamically tunable hydrogel friction through reversible host&ndash;guest regrafting of
-        polymer brushes onto a supramolecular network (Liu et al., <em>Langmuir</em> 2026).
-      </p>
-      <p>
-        It pulls together the main lubrication mechanisms (poroelastic weeping, hydrodynamic, and boundary), works through
-        each study's methods and limitations, and draws out a few common structure&ndash;property relationships. Surface
-        hydration sets boundary friction no matter the chemistry. Separating surface structure from bulk mechanics is the key
-        to hydrogels that bear load but still slide easily. And tuning friction on demand through stimuli-responsive surfaces
-        is where the field is heading.
-      </p>
-      <div class="cta-row">
-        <a href="images/hydrogel_tribology.pdf" class="btn btn--outline" target="_blank" rel="noopener">Read Full Paper (PDF) &rarr;</a>
-      </div>
-    </section>
-
-    <!-- PROJECT 10: CounselAI Customer Needs Document -->
-    <section class="section project-detail reveal">
-      <h2>CounselAI: Customer Needs Document</h2>
-      <div class="project-detail__meta">
-        <span class="tag tag--red">Product Management</span>
-        <span class="tag tag--red">Customer Discovery</span>
-        <span class="tag tag--red">Market Research</span>
-        <span class="tag tag--red">Engineering Product Management</span>
-        <span class="tag tag--red">Legal AI</span>
-      </div>
-      <p>
-        A customer discovery and market research document I wrote for the Engineering Product Management
-        course, part of Penn's entrepreneurship class offerings (Spring 2026). It defines the product opportunity,
-        the target segment, and the ranked customer needs for CounselAI, a proposed litigation-first AI legal
-        assistant for small to mid-size law firms (5 to 200 attorneys).
-      </p>
-      <p>
-        The research came from 5 primary interviews with practicing attorneys and firm administrators, plus 2
-        supplemental simulated profiles, checked against secondary sources like the 2025 Clio Legal Trends Report,
-        the Draftwise Legal AI Landscape Guide, and Artificial Lawyer industry surveys. The document covers market
-        sizing ($3.1B growing to $10.8B by 2030), the competitive landscape (Harvey, Legora, August, Thomson Reuters
-        CoCounsel, Draftwise), user personas, and a value proposition statement.
-      </p>
-      <p>
-        The key insight: attorneys don&rsquo;t distrust AI because it&rsquo;s slow. They distrust it because they
-        can&rsquo;t verify it. So the design principle is simple: every AI output has to show its source inline,
-        right where you use it, so checking the work saves time instead of costing it. The white space is a
-        research-to-draft workflow in one tool, priced for firms of 5 to 20 attorneys. August (transactional focus,
-        $375/user/month) and Harvey/Legora (enterprise onboarding) both leave that gap open.
-      </p>
-      <div class="cta-row">
-        <a href="images/CounselAI_Customer_Needs.pdf" class="btn btn--red" target="_blank" rel="noopener">Read Full Document (PDF) &rarr;</a>
-      </div>
     </section>
   </main>
 

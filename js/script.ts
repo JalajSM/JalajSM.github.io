@@ -19,6 +19,23 @@ function setFooterYear(): void {
   }
 }
 
+function setupHudClock(): void {
+  const el = document.getElementById('hud-clock');
+  if (!el) return;
+  const tick = (): void => {
+    const now = new Date();
+    const time = now.toLocaleTimeString('en-US', {
+      hour12: false,
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+    });
+    el.textContent = `NYC ${time}`;
+  };
+  tick();
+  setInterval(tick, 1000);
+}
+
 function setActiveNavLink(): void {
   const currentPath = getCurrentPath();
   const links = document.querySelectorAll<HTMLAnchorElement>('.nav-link');
@@ -116,6 +133,7 @@ function setupLightbox(): void {
 
 function init(): void {
   setFooterYear();
+  setupHudClock();
   setActiveNavLink();
   setupHeaderShadow();
   setupScrollReveal();

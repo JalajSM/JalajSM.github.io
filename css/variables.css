@@ -1,21 +1,22 @@
 /* ============================================================
-   Design tokens — refined academic palette & typography
-   Columbia blue (Pantone 292) + Penn red (Pantone 200) on a
-   warm-paper light theme.
+   Design tokens
+   Original academic colorway — Columbia blue (Pantone 292) +
+   Penn red — on warm paper. Layout language inspired by CORE:
+   monospace HUD chrome, hairline rules, extreme restraint.
    ============================================================ */
 :root {
-  /* Surfaces — warm off-white "paper" for a refined, editorial feel */
+  /* Surfaces — warm off-white "paper" */
   --color-bg: #fbfaf7;
   --color-bg-elevated: #ffffff;
   --color-surface: #f1f3f8;
 
-  /* Columbia blue family */
+  /* Columbia blue family — primary accent */
   --color-blue: #2f6db0;
   --color-blue-light: #75aadb;
   --color-blue-dark: #1f4f86;
   --color-blue-tint: rgba(47, 109, 176, 0.08);
 
-  /* Penn red family */
+  /* Penn red family — secondary accent */
   --color-red: #8a0d12;
   --color-red-light: #b31b1b;
   --color-red-tint: rgba(138, 13, 18, 0.07);
@@ -23,19 +24,18 @@
   /* Ink / text */
   --color-text: #16202b;
   --color-text-muted: #51606e;
-  --color-text-faint: #7a8794;
+  --color-text-faint: #8b96a2;
 
-  /* Lines & borders */
-  --color-border: rgba(22, 32, 43, 0.1);
-  --color-border-strong: rgba(22, 32, 43, 0.16);
+  /* Hairlines & borders */
+  --color-border: rgba(22, 32, 43, 0.12);
+  --color-border-strong: rgba(22, 32, 43, 0.24);
+  --color-rule: rgba(22, 32, 43, 0.9);
 
-  /* Brand gradient accent */
-  --gradient-accent: linear-gradient(120deg, var(--color-blue) 0%, var(--color-blue-dark) 55%, var(--color-red) 140%);
-  --gradient-soft: linear-gradient(160deg, #f6f9fd 0%, #fbfaf7 60%);
-
-  /* Typography */
-  --font-serif: 'Fraunces', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
-  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  /* Typography — Garamond primary, Fraunces secondary display serif */
+  --font-body: 'EB Garamond', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  /* legacy alias: label/HUD chrome now rides on the primary serif */
+  --font-mono: var(--font-body);
 
   /* Spacing scale */
   --space-2xs: 0.25rem;
@@ -43,26 +43,23 @@
   --space-sm: 0.75rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
-  --space-xl: 2.25rem;
-  --space-2xl: 3.5rem;
-  --space-3xl: 5.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4.5rem;
+  --space-3xl: 8rem;
 
-  /* Radius */
-  --radius-sm: 8px;
-  --radius: 14px;
-  --radius-lg: 22px;
-  --radius-pill: 999px;
+  /* Radius — squared, minimal */
+  --radius-sm: 2px;
+  --radius: 3px;
 
-  /* Elevation */
-  --shadow-sm: 0 1px 2px rgba(22, 32, 43, 0.06), 0 2px 6px rgba(22, 32, 43, 0.05);
-  --shadow-md: 0 6px 18px rgba(22, 32, 43, 0.08), 0 2px 6px rgba(22, 32, 43, 0.05);
-  --shadow-lg: 0 18px 48px rgba(22, 32, 43, 0.12), 0 6px 16px rgba(22, 32, 43, 0.06);
-  --shadow-blue: 0 16px 40px rgba(47, 109, 176, 0.22);
+  /* Elevation — barely-there */
+  --shadow-sm: 0 1px 2px rgba(22, 32, 43, 0.05);
+  --shadow-md: 0 12px 32px -16px rgba(22, 32, 43, 0.3);
 
   /* Motion */
-  --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition: 0.25s ease;
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 
   /* Layout */
-  --content-width: 1020px;
+  --content-width: 720px;
+  --wide-width: 1000px;
 }
