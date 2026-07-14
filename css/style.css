@@ -147,13 +147,7 @@ ul li::before {
   text-decoration: none;
 }
 
-.nav__brand::before {
-  content: '';
-  width: 9px;
-  height: 9px;
-  background: var(--color-blue);
-  flex-shrink: 0;
-}
+
 
 .nav-link {
   color: var(--color-text-faint);
@@ -191,7 +185,7 @@ ul li::before {
   margin: 0 auto;
   padding: 0 var(--space-xl) var(--space-3xl);
   width: 100%;
-  counter-reset: section;
+
 }
 
 /* ============================================================
@@ -281,7 +275,6 @@ ul li::before {
   font-size: 1.05rem;
   color: var(--color-text-muted);
   margin: 0;
-  max-width: 54ch;
   line-height: 1.8;
 }
 
@@ -347,11 +340,7 @@ ul li::before {
   margin-bottom: var(--space-md);
 }
 
-.section__eyebrow::before {
-  counter-increment: section;
-  content: counter(section, decimal-leading-zero) '  ';
-  color: var(--color-text-faint);
-}
+
 
 .section > h2 {
   font-size: clamp(1.3rem, 2.6vw, 1.7rem);
@@ -677,6 +666,13 @@ ul li::before {
   border-top: 1px solid var(--color-rule);
 }
 
+/* suppress the border on the first project directly after the page header
+   so we don't get two stacked lines (page-header border-bottom + project border-top) */
+.page-header + .project-detail {
+  border-top: none;
+  padding-top: var(--space-xl);
+}
+
 .project-detail h2 {
   font-size: clamp(1.25rem, 2.6vw, 1.7rem);
   font-weight: 500;
@@ -783,7 +779,6 @@ ul li::before {
   font-size: 0.95rem;
   color: var(--color-text-muted);
   line-height: 1.8;
-  max-width: var(--content-width);
 }
 
 .project-detail .cta-row {
@@ -945,6 +940,19 @@ ul li::before {
     padding: 0 var(--space-lg) var(--space-2xl);
   }
 
+  .hero__title {
+    font-size: clamp(1.8rem, 8vw, 2.8rem);
+  }
+
+  .hero__tagline {
+    font-size: 0.95rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .page-header__row {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -971,5 +979,50 @@ ul li::before {
 
   .timeline__marker {
     left: -1.75rem;
+  }
+
+  /* prevent gallery images from blowing out the viewport */
+  .project-detail__gallery {
+    gap: var(--space-sm);
+  }
+
+  .project-detail__img {
+    min-width: 80vw;
+    max-height: 220px;
+  }
+
+  .project-detail__meta {
+    gap: var(--space-xs);
+  }
+
+  .section > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* very small phones */
+@media (max-width: 400px) {
+  .nav {
+    gap: var(--space-sm);
+  }
+
+  .nav__brand {
+    font-size: 0.68rem;
+  }
+
+  .nav-link {
+    font-size: 0.6rem;
+  }
+
+  .hero__title {
+    font-size: 1.7rem;
+  }
+
+  .hero__tagline {
+    font-size: 0.9rem;
+  }
+
+  .main {
+    padding: 0 var(--space-md) var(--space-2xl);
   }
 }

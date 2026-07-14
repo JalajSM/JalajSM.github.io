@@ -31,10 +31,11 @@
   --color-border-strong: rgba(22, 32, 43, 0.24);
   --color-rule: rgba(22, 32, 43, 0.9);
 
-  /* Typography — Garamond primary, Fraunces secondary display serif */
-  --font-body: 'EB Garamond', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
-  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
-  /* legacy alias: label/HUD chrome now rides on the primary serif */
+  /* Typography — Nunito Sans primary (closest free alternative to Proxima Nova),
+     Inter secondary display font */
+  --font-body: 'Nunito Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  /* UI chrome (HUD, nav, labels) rides on the primary font */
   --font-mono: var(--font-body);
 
   /* Spacing scale */
