@@ -193,11 +193,12 @@ ul li::before {
    ============================================================ */
 .hero {
   position: relative;
-  min-height: calc(100vh - 200px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--space-xl) 0 var(--space-2xl);
+  /* Top padding must clear the absolutely-positioned HUD (top: var(--space-lg)
+     plus ~3 lines of HUD text). Bottom padding leaves room for the scroll hint. */
+  padding: var(--space-3xl) 0 var(--space-2xl);
   margin-bottom: var(--space-2xl);
   border-bottom: 1px solid var(--color-border);
 }
