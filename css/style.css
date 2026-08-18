@@ -281,16 +281,18 @@ ul li::before {
 
 .hero__lockup {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: var(--space-xl);
 }
 
 .hero__photo {
   flex-shrink: 0;
-  width: 180px;
-  height: 180px;
-  border-radius: 4px;
+  align-self: stretch;
+  width: auto;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+  border-radius: 4px;
   border: 1px solid var(--color-border);
 }
 
@@ -302,8 +304,9 @@ ul li::before {
     gap: var(--space-lg);
   }
   .hero__photo {
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
+    align-self: center;
   }
 }
 
